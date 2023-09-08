@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    color: white;
+}

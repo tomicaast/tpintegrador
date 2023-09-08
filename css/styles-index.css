@@ -33,3 +33,16 @@ body{
     display: flex;
     gap: 5px;
 }
+.botbuscar{
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+.box{
+    display: flex;
+    
+}
+img{
+    max-width: 200px;
+}

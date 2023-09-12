@@ -1,0 +1,19 @@
+
+.encabezado{
+    display: flex;
+    background-color: rgb(83, 20, 20);
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 2vw;
+    justify-content: space-between;
+}
+.detail-genres1{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.img{
+    max-width: 300px;
+}
+

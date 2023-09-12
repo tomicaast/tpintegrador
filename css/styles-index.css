@@ -54,3 +54,7 @@ body{
 img{
     max-width: 200px;
 }
+
+logo{
+    border-radius: 50%;
+}

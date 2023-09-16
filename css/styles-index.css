@@ -87,18 +87,92 @@ footer ul {
     margin-top: 20px;
 }
 
-.contenedormain{
+/* Formato global para main y cajas en index, detail_movie, detail_serie */
+
+main .contenedormain{
     display: flex;
-    padding: 10px;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
+    padding: 20px;
+    background-image: url(https://media3.giphy.com/media/TxVVB6PfWMjE4/giphy.gif?cid=ecf05e47gima5p0o8vpw0k1i1p6edce0pdyqu4infe6ss3w9&ep=v1_gifs_search&rid=giphy.gif&ct=g);
 }
+
 .box{
     display: flex;
-    color: white;
-    background-color: gray;
-    border-radius: 5px;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.box .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.peli .serie{
+    flex: 1;
+    min-width: 200px;
+    background-color: #003366;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: #003366 solid 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box h2{
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;    
+}
+
+.peli, .serie {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+.peli p, .serie p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pelimg .serieimg {
+    max-width: 100%;
+    max-height: 250px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.titulo{
+    font-size: 24px;  
+    color: #ffffff; 
+    padding: 10px 20px;  
+    background: linear-gradient(to bottom, #003366, #0066cc);  
+    border-radius: 20px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    width: 100%;  
+    justify-content: center;
+    text-align: center;  
+    margin: 10px 0; 
+}
+
 img{
     max-width: 200px;
 }

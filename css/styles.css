@@ -267,3 +267,76 @@ main .contenedorgeneros{
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+@media(max-width: 648px) {
+    header .encabezado {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header .encabezado img {
+        margin-top: 20px;
+    }
+
+    .menu .navegador {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menu .navegador li {
+        width: 100%;
+        margin: 6px 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .barrabusqueda {
+        width: 100%;
+        margin: 7px 0;
+    }
+
+    .barrabusqueda input[type="text"] {
+        width: 280px;
+        margin: 0 auto; 
+    }
+
+    main .contenedormain, main .contenedorgeneros {
+        padding: 8px;
+    }
+
+    .box, .box-g {
+        flex-direction: column;
+        align-items: center;
+        padding: 9px;
+    }
+
+    .peli, .serie {
+        width: 260px;
+        margin: 6px 0;
+    }
+
+    .detail_img {
+        align-self: center;
+        margin: 10px 0;
+        margin-right: 0; 
+    }
+
+    .detail_article {
+        flex-direction: column;
+        width: 325px; 
+        margin-left: 25px;
+    }
+
+    .add_fav {
+        position: static;
+        margin: 7px 0;
+        display: block;
+        padding: 5px;
+        width: 58%; 
+        text-align: center;
+    }
+}
+
+

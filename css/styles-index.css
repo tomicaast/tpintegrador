@@ -8,6 +8,9 @@ body{
     font-family: 'Roboto', sans-serif;
     color: white;
 }
+
+/* Formato para todo el header */
+
 header .encabezado{
     display: flex;
     justify-content: space-between;
@@ -21,15 +24,11 @@ header .encabezado{
     max-width: 150px;
 }
 
-.menu ul{
-    display: flex;
-    gap: 10px;
-}
 .menu .navegador{
     list-style: none;
     display: flex;
-
 }
+
 .menu .navegador li{
     margin: 0 15px;
 }
@@ -38,16 +37,56 @@ header .encabezado{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
-.botbuscar{
-    background-color: orange;
+.menu .navegador li .categoria:hover{
+    color: #ff3333;
+}
+
+.barrabusqueda{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    margin-right: 10px;
     border: none;
     border-radius: 5px;
-    padding: 2px;
 }
+
+.barrabusqueda input[type="text"] {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.boton{
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Formato para footer */
+
+footer .contenedorfooter {
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
 .contenedormain{
     display: flex;
     padding: 10px;

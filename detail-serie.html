@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Handjet&family=Open+Sans&family=Raleway:wght@400;700&family=Roboto:wght@300&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Handjet&family=Open+Sans&family=Raleway:wght@400;700&family=Roboto:wght@300;700&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="encabezado">
             <div class="logo">
-                <img src="" alt="logo">
+                <img src="./img/logolentes3d.png" alt="logo">
             </div>
             <div class="menu">
                 <ul class="navegador">
                     <li><a href="index.html" class="categoria">INICIO</a></li>
                     <li><a href="genres.html" class="categoria">GÉNEROS</a></li>
-                    <li><a href="favorites.html" class="categoria">FAVORITOS</a></li>
+                    <li><a href="favorite.html" class="categoria">FAVORITOS</a></li>
                 </ul>
             </div>
             <div class="barrabusqueda">
@@ -24,62 +30,26 @@
                 <button type="submit" class="botbuscar">Buscar</button>
             </div>
         </div>
-        </header> 
+    </header>
 <main>
-    <div class="Series populares">
-        <article class="detalleserie1">
-            <img src="./img/the_boys.jpg" alt="Portadaserie1">
-            <title>The Boys</title>
-            <h1 class="sinopsis">Una historia de acción centrada en un escuadrón de la CIA con la misión de mantener a los superhéroes a raya a cualquier precio.</h1>
-            <h2 class="Rating">8.7</h2>
-            <h2 class="Fecha de estreno">16 de julio de 2019</h2>
-            <h2 class="Genero">Acción, Comedia, Crimen</h2>
- </article>
-     </div>    
-
-     <div class="Series populares">
-        <article class="detalleserie2">
-            <img src="./img/breaking_bad.jpg" alt="Portadaserie2">
-            <title>Breaking Bad</title>
-            <h1 class="sinopsis">Un profesor de instituto diagnosticado con cáncer de pulmón empieza a manufacturar y vender metamfetamina para asegurar el futuro de su familia.</h1>
-            <h2 class="Rating">9.5</h2>
-            <h2 class="Fecha de estreno">20 de enero de 2008</h2>
-            <h2 class="Genero">Drama, Suspenso, Crimen</h2>
- </article>
-     </div>    
-
-     <div class="Series populares">
-        <article class="detalleserie3">
-            <img src="./img/friends.jpg" alt="Portadaserie3">
-            <title>Friends</title>
-            <h1 class="sinopsis">La vida personal y profesional de seis amigos, de veinte a treinta y tantos años, que viven en Manhattan.</h1>
-            <h2 class="Rating">8.9</h2>
-            <h2 class="Fecha de estreno">22 de septiembre de 1994</h2>
-            <h2 class="Genero">Comedia, Romance</h2>
- </article>
-     </div>    
-
-     <div class="Series populares">
-        <article class="detalleserie4">
-            <img src="./img/game_of_thrones.jpg" alt="Portadaserie4">
-            <title>Game Of Thrones</title>
-            <h1 class="sinopsis">Nueve familias nobles luchan por el control de las tierras de Poniente, mientras que un antiguo enemigo regresa después de estar inactivo durante milenios.</h1>
-            <h2 class="Rating">9.2</h2>
-            <h2 class="Fecha de estreno">17 de abril de 2011</h2>
-            <h2 class="Genero">Acción, Aventura, Drama</h2>
- </article>
-     </div> 
-
-     <div class="Series populares">
-        <article class="detalleserie5">
-            <img src="./img/sherlock.jpg" alt="Portadaserie5">
-            <title>Sherlock</title>
-            <h1 class="sinopsis">El famoso detective Sherlock Holmes y su compañero el Dr. Watson resuelven crímenes en el Londres del siglo XXI.</h1>
-            <h2 class="Rating">9.1</h2>
-            <h2 class="Fecha de estreno">25 de julio de 2010</h2>
-            <h2 class="Genero">Crimen, Drama, Misterio</h2>
- </article>
-     </div> 
+    <div class="contenedormain">
+        <div class="box">
+        <article class="detail_article">
+            <a href="#" class="add_fav">Agregar a favoritos</a>
+            <img src="./img/sherlock.jpg" alt="Portadapelicula1" class="detail_img">
+            <div class="details">
+                <h2>Sherlock (9.1/10 🌟)</h2>
+                <ul>
+                    <li><b>Fecha de estreno:</b> 25 de julio de 2010</li>
+                    <li><b>Duración:</b> 1h 54min</li>
+                    <li><b>Sinopsis:</b> El famoso detective Sherlock Holmes y su compañero el Dr. Watson resuelven crímenes en el Londres del siglo XXI.</li>
+                    <li><a href="genres.html"><b>Género:</b></a> Crimen, Drama, Misterio</li>
+                </ul>
+            </div>
+        </article>        
+        </div>
+    </div>
+</main>
 <footer>
     <div class="contenedorfooter">
         <p>Hecho en Digital House, 2023</p>

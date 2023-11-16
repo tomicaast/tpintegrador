@@ -79,6 +79,10 @@ footer .contenedorfooter {
     text-align: center;
 }
 
+footer p {
+    margin-top: 20px
+}
+
 footer ul {
     list-style: none;
     display: flex;
@@ -338,5 +342,3 @@ main .contenedorgeneros{
         text-align: center;
     }
 }
-
-

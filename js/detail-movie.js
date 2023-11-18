@@ -23,27 +23,43 @@ fetch(detalle)
         let sinopsis = respuesta.overview;
         let calificacion = respuesta.vote_average;
         let modifContenedor = ``;
+        let modifGeneros = ``;
+        for (let i = 0; i < genero.length; i++){
+            let gen = genero[i].name
+            let genId = genero[i].id
+            if (genero.length === 0){
+                modifGeneros = `<p>Sin género</p>`
+            }
+            else{
+            modifGeneros += `<a class="link" id="gen" href="./detail-genres.html?mgen-id=${genId}">${gen} </a>`
+            }}
+
         let poster = "https://image.tmdb.org/t/p/w200" + posterPath;
+
         modifContenedor += `
-                        <article class="detail_article">
-                        <a href="favorite.html" class="add_fav">Agregar a favoritos</a>
-                        <img src="${poster}" alt="Portada" class="detail_img">
-                        <div class="details">
-                            <h2 class="detail_title">${movie_title} | (${calificacion} 🌟)</h2>
-                            <ul>
-                                <li><b>Fecha de estreno:</b> ${fecha}</li>
-                                <li><b>Duración:</b> ${duracion}min</li>
-                                <li><b>Sinopsis:</b> ${sinopsis}</li>
-                                <li><a href="genres.html"><b>Género:</b></a> ${genero}</li>
-                            </ul>
-                    </article>
-                    `
+            <article class="detail_article">
+                <a href="favorite.html" class="add_fav">Agregar a favoritos</a>
+                <img src="${poster}" alt="Portada" class="detail_img">
+                <div class="details">
+                    <h2 class="detail_title">${movie_title} | (${calificacion} 🌟)</h2>
+                    <ul>
+                        <li><b>Fecha de estreno:</b> ${fecha}</li>
+                        <li><b>Duración:</b> ${duracion}min</li>
+                        <li><b>Sinopsis:</b> ${sinopsis}</li>
+                        <li>
+                            <b>Géneros: ${modifGeneros}</b> 
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        `;
 
         contenedor.innerHTML = modifContenedor; 
     })
-        .catch(function(error) {
-            console.log("Error al obtener la información: " + error);
-        })
+    .catch(function(error) {
+        console.log("Error al obtener la información: " + error);
+    });
+
 
 
 let recomendados = `https://api.themoviedb.org/3/movie/${capturaId}/recommendations?api_key=${api_key}`
@@ -82,7 +98,7 @@ fetch(recomendados)
                 <article class="peli">
                     <h3 class="titulo peli">${movie_title}</h3>
                     <p>Fecha de estreno: ${fecha}</p>
-                    <img src="${poster}" alt="Barbie" class="pelimg">
+                    <img src="${poster}" alt="${movie_title}" class="pelimg">
                     <a href="detail-movie.html?id=${movie_id}"><button type="submit" class="boton">Ver detalle</button></a>
                 </article>
                 `;
